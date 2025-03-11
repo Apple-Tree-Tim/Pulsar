@@ -129,9 +129,9 @@ const Header = ({ auth, account }: LayoutProps) => {
               </Offcanvas.Body>
             </Offcanvas>
             <LandingNavbar className='font-rubik'>
-              <Link href='/price'>Home</Link>
+              <Link  className="text-white hover:text-[#8758ff] transition-colors" href='/price'>Home</Link>
               <Dropdown menu={{ items: products }} trigger={['hover']}>
-                <Link href='/price'>
+                <Link  className="text-white hover:text-[#8758ff] transition-colors" href='/price'>
                   <HeaderTab>
                     Products&nbsp;&nbsp;
                     <ArrowDownIcon stroke={Color.$white} />
@@ -139,14 +139,14 @@ const Header = ({ auth, account }: LayoutProps) => {
                 </Link>
               </Dropdown>
               <Dropdown menu={{ items: resources }} trigger={['hover']}>
-                <Link href='/price'>
+                <Link  className="text-white hover:text-[#8758ff] transition-colors" href='/price'>
                   <HeaderTab>
                     Resources&nbsp;&nbsp;
                     <ArrowDownIcon stroke={Color.$white} />
                   </HeaderTab>
                 </Link>
               </Dropdown>
-              <Link href='/price'>Pricing</Link>
+              <Link  className="text-white hover:text-[#8758ff] transition-colors" href='/price'>Pricing</Link>
             </LandingNavbar>
           </LandingPageLogoContent>
         )}
@@ -174,7 +174,7 @@ const Header = ({ auth, account }: LayoutProps) => {
       ) : (
         <AuthContent>
           <Link href='/login'>
-            <LoginButton>Log in</LoginButton>
+            <LoginButton  className="text-white hover:text-[#8758ff] transition-colors">Log in</LoginButton>
           </Link>
           <Link href='/signup'>
             <SignupButton className='button-primary'>Sign up</SignupButton>
