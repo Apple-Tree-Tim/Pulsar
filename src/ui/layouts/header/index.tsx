@@ -107,9 +107,9 @@ const Header = ({ auth, account }: LayoutProps) => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <OffcanvasBodyDiv className='font-rubik'>
-                  <Link href='/price'>Home</Link>
+                  <Link className="text-white hover:text-[#8758ff] transition-colors" href='/price'>Home</Link>
                   <Dropdown menu={{ items: products }} trigger={['hover']}>
-                    <Link href='/price'>
+                    <Link className="text-white hover:text-[#8758ff] transition-colors" href='/price'>
                       <HeaderTab>
                         Products&nbsp;&nbsp;
                         <ArrowDownIcon stroke={Color.$white} />
@@ -117,14 +117,14 @@ const Header = ({ auth, account }: LayoutProps) => {
                     </Link>
                   </Dropdown>
                   <Dropdown menu={{ items: resources }} trigger={['hover']}>
-                    <Link href='/price'>
+                    <Link className="text-white hover:text-[#8758ff] transition-colors" href='/price'>
                       <HeaderTab>
                         Resources&nbsp;&nbsp;
                         <ArrowDownIcon stroke={Color.$white} />
                       </HeaderTab>
                     </Link>
                   </Dropdown>
-                  <Link href='/price'>Pricing</Link>
+                  <Link className="text-white hover:text-[#8758ff] transition-colors" href='/price'>Pricing</Link>
                 </OffcanvasBodyDiv>
               </Offcanvas.Body>
             </Offcanvas>
@@ -174,10 +174,10 @@ const Header = ({ auth, account }: LayoutProps) => {
       ) : (
         <AuthContent>
           <Link href='/login'>
-            <LoginButton  className="text-white hover:text-[#8758ff] transition-colors">Log in</LoginButton>
+            <LoginButton variant="ghost" className="text-white hover:text-[#8758ff] transition-colors font-medium">Log in</LoginButton>
           </Link>
           <Link href='/signup'>
-            <SignupButton className='button-primary'>Sign up</SignupButton>
+            <SignupButton className="bg-[#8758ff] hover:bg-[#8758ff]/90 text-white rounded-full px-6 py-2 font-medium">Sign up</SignupButton>
           </Link>
         </AuthContent>
       )}
