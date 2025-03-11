@@ -64,6 +64,7 @@ export const LoginButton = styled.button`
 export const SignupButton = styled.button`
   padding: ${Padding.s} ${Padding.base};
   border-radius: ${BorderRadius.xxxl};
+  width: 100%;
 `;
 export const HeaderTab = styled.div`
   display: flex;
