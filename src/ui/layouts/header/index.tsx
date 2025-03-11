@@ -174,7 +174,7 @@ const Header = ({ auth, account }: LayoutProps) => {
       ) : (
         <AuthContent>
           <Link href='/login'>
-            <LoginButton variant="ghost" className="text-white hover:text-[#8758ff] transition-colors font-medium">Log in</LoginButton>
+            <LoginButton className="text-white hover:text-[#8758ff] transition-colors font-medium">Log in</LoginButton>
           </Link>
           <Link href='/signup'>
             <SignupButton className="bg-[#8758ff] hover:bg-[#8758ff]/90 text-white rounded-full px-6 py-2 font-medium">Sign up</SignupButton>
